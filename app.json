@@ -14,6 +14,22 @@
     "ADMIN_PASSWORD": {
       "description": "We will create an admin user with this password.",
       "value": "test123"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "To store images of your products, store your AWS_ACCESS_KEY_ID here.",
+      "value": "AWS_ACCESS_KEY_ID_here"
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "To store images of your products, store your AWS_SECRET_ACCESS_KEY here.",
+      "value": "AWS_SECRET_ACCESS_KEY_here"
+    },
+    "AWS_REGION": {
+      "description": "Where in the world do you want to store your data?",
+      "value": "us-west-2"
+    },
+    "S3_BUCKET_NAME": {
+      "description": "What is the name of the bucket you set on AWS?",
+      "value": "previously_created_bucket_name"
     }
   }
 }
