@@ -38,3 +38,7 @@ gem 'puma'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+## solidus customization
+gem 'solidus'
+gem 'solidus_auth_devise'
