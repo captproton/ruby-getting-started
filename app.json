@@ -3,6 +3,7 @@
   "description": "A barebones Rails app, which can easily be deployed to Heroku",
   "image": "heroku/ruby",
   "repository": "https://github.com/captproton/ruby-getting-started/",
+   "logo": "http://solidus.io/favicon.ico",
   "keywords": ["ruby", "rails" ],
-  "addons": ["heroku-postgresql"]
+  "addons": [ "heroku-postgresql:hobby-dev"]
 }
