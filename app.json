@@ -5,5 +5,15 @@
   "repository": "https://github.com/captproton/ruby-getting-started/",
    "logo": "http://solidus.io/favicon.ico",
   "keywords": ["ruby", "rails" ],
-  "addons": [ "heroku-postgresql:hobby-dev"]
+  "addons": [ "heroku-postgresql:hobby-dev"],
+  "env": {
+    "ADMIN_EMAIL": {
+      "description": "We will create an admin user with this email.",
+      "value": "admin@example.com"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "We will create an admin user with this password.",
+      "value": "test123"
+    }
+  }
 }
