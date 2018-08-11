@@ -40,7 +40,7 @@ gem 'puma'
 
 
 # gems specific to using solidus
-# gem 'solidus', '~> 2.6'
+gem 'solidus', '~> 2.6'
 # gem 'solidus_auth_devise'
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
