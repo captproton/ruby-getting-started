@@ -58,6 +58,7 @@ GEM
     aws-sdk-resources (2.11.106)
       aws-sdk-core (= 2.11.106)
     aws-sigv4 (1.0.3)
+    bcrypt (3.1.12)
     builder (3.2.3)
     cancancan (2.2.0)
     canonical-rails (0.2.4)
@@ -74,6 +75,14 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    devise (4.4.3)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
+    devise-encryptable (0.2.0)
+      devise (>= 2.1.0)
     discard (1.0.0)
       activerecord (>= 4.2, < 6)
     erubi (1.7.0)
@@ -133,6 +142,7 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    orm_adapter (0.5.0)
     paperclip (5.3.0)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
@@ -215,6 +225,11 @@ GEM
       kaminari-activerecord (~> 1.1)
       responders
       solidus_core (= 2.6.0)
+    solidus_auth_devise (2.1.0)
+      devise (~> 4.1)
+      devise-encryptable (= 0.2.0)
+      solidus_core (>= 1.2.0, < 3)
+      solidus_support (>= 0.1.3)
     solidus_backend (2.6.0)
       autoprefixer-rails (~> 7.1)
       coffee-rails
@@ -260,6 +275,7 @@ GEM
       truncate_html (~> 0.9, >= 0.9.2)
     solidus_sample (2.6.0)
       solidus_core (= 2.6.0)
+    solidus_support (0.2.1)
     spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -289,6 +305,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.4)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.7)
+      rack (>= 1.0)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -309,6 +327,7 @@ DEPENDENCIES
   sass-rails
   sdoc
   solidus (~> 2.6)
+  solidus_auth_devise
   spring
   turbolinks
   uglifier
